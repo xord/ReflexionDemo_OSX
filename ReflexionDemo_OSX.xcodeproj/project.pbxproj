@@ -7,20 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		83BD48231C1D28600033477E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BD48221C1D28600033477E /* AppDelegate.m */; };
+		5B124B4F30A9D655F3ECF2C2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D15671D5A5AE59B02C7327 /* libPods.a */; };
+		838398FE1C4D4240004932F8 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838398FD1C4D4240004932F8 /* OpenAL.framework */; };
+		838399001C4D4310004932F8 /* main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 838398FF1C4D4310004932F8 /* main.rb */; };
 		83BD48261C1D28600033477E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BD48251C1D28600033477E /* main.m */; };
 		83BD48281C1D28600033477E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BD48271C1D28600033477E /* Assets.xcassets */; };
 		83BD482B1C1D28600033477E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83BD48291C1D28600033477E /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4ABE6A86A9427B575A97BC5F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		838398FD1C4D4240004932F8 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		838398FF1C4D4310004932F8 /* main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = main.rb; path = ../../TTT/TTT/main.rb; sourceTree = "<group>"; };
 		83BD481E1C1D28600033477E /* ReflexionDemo_OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReflexionDemo_OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		83BD48211C1D28600033477E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		83BD48221C1D28600033477E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		83BD48251C1D28600033477E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		83BD48271C1D28600033477E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83BD482A1C1D28600033477E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		83BD482C1C1D28600033477E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3D15671D5A5AE59B02C7327 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A553B001A2F095C717F31981 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838398FE1C4D4240004932F8 /* OpenAL.framework in Frameworks */,
+				5B124B4F30A9D655F3ECF2C2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +46,8 @@
 			children = (
 				83BD48201C1D28600033477E /* ReflexionDemo_OSX */,
 				83BD481F1C1D28600033477E /* Products */,
+				FBE0C64F0CE1E8551CEE2591 /* Pods */,
+				CD5C56F30B1A1704600F990A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,8 +62,7 @@
 		83BD48201C1D28600033477E /* ReflexionDemo_OSX */ = {
 			isa = PBXGroup;
 			children = (
-				83BD48211C1D28600033477E /* AppDelegate.h */,
-				83BD48221C1D28600033477E /* AppDelegate.m */,
+				838398FF1C4D4310004932F8 /* main.rb */,
 				83BD48271C1D28600033477E /* Assets.xcassets */,
 				83BD48291C1D28600033477E /* MainMenu.xib */,
 				83BD482C1C1D28600033477E /* Info.plist */,
@@ -71,6 +79,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CD5C56F30B1A1704600F990A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				838398FD1C4D4240004932F8 /* OpenAL.framework */,
+				A3D15671D5A5AE59B02C7327 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBE0C64F0CE1E8551CEE2591 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A553B001A2F095C717F31981 /* Pods.debug.xcconfig */,
+				4ABE6A86A9427B575A97BC5F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83BD482F1C1D28600033477E /* Build configuration list for PBXNativeTarget "ReflexionDemo_OSX" */;
 			buildPhases = (
+				48271489C72E118B1253A8E1 /* Check Pods Manifest.lock */,
 				83BD481A1C1D285F0033477E /* Sources */,
 				83BD481B1C1D285F0033477E /* Frameworks */,
 				83BD481C1C1D285F0033477E /* Resources */,
+				FF1793A7FBAF57DC69065E6D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838399001C4D4310004932F8 /* main.rb in Resources */,
 				83BD48281C1D28600033477E /* Assets.xcassets in Resources */,
 				83BD482B1C1D28600033477E /* MainMenu.xib in Resources */,
 			);
@@ -135,13 +164,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48271489C72E118B1253A8E1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF1793A7FBAF57DC69065E6D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83BD481A1C1D285F0033477E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				83BD48261C1D28600033477E /* main.m in Sources */,
-				83BD48231C1D28600033477E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,11 +301,13 @@
 		};
 		83BD48301C1D28600033477E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A553B001A2F095C717F31981 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ReflexionDemo_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.xord.ReflexionDemo-OSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -252,11 +315,13 @@
 		};
 		83BD48311C1D28600033477E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ABE6A86A9427B575A97BC5F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = ReflexionDemo_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.xord.ReflexionDemo-OSX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -281,6 +346,7 @@
 				83BD48311C1D28600033477E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

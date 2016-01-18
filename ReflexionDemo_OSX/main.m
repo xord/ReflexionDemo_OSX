@@ -1,5 +1,6 @@
-#import <Cocoa/Cocoa.h>
+#import <Reflexion.h>
 
 int main(int argc, const char * argv[]) {
-    return NSApplicationMain(argc, argv);
+    [Reflexion start];
+    return EXIT_SUCCESS;
 }
